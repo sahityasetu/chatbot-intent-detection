@@ -1,0 +1,124 @@
+{
+  "run": "bert_oos_class",
+  "errors": 465,
+  "in_scope_sent_to_oos": 248,
+  "oos_answered_as_intent": 133,
+  "intent_confusions": 84,
+  "intent_confusions_within_same_domain": 0.631,
+  "top_confused_pairs": [
+    {
+      "actual": "redeem_rewards",
+      "predicted": "rewards_balance",
+      "count": 5
+    },
+    {
+      "actual": "reminder_update",
+      "predicted": "make_call",
+      "count": 3
+    },
+    {
+      "actual": "payday",
+      "predicted": "bill_due",
+      "count": 3
+    },
+    {
+      "actual": "transactions",
+      "predicted": "spending_history",
+      "count": 3
+    },
+    {
+      "actual": "accept_reservations",
+      "predicted": "restaurant_reservation",
+      "count": 2
+    },
+    {
+      "actual": "pto_request",
+      "predicted": "pto_request_status",
+      "count": 2
+    },
+    {
+      "actual": "pay_bill",
+      "predicted": "bill_due",
+      "count": 2
+    },
+    {
+      "actual": "report_fraud",
+      "predicted": "transactions",
+      "count": 2
+    }
+  ],
+  "example_errors": [
+    {
+      "text": "check current prime mortgage rate",
+      "label": "oos",
+      "pred": "interest_rate",
+      "confidence": 0.8028
+    },
+    {
+      "text": "can i deposit a check",
+      "label": "oos",
+      "pred": "direct_deposit",
+      "confidence": 0.8575
+    },
+    {
+      "text": "i appeciate it",
+      "label": "thank_you",
+      "pred": "oos",
+      "confidence": 0.2146
+    },
+    {
+      "text": "i lost all my stuff that i had packed",
+      "label": "lost_luggage",
+      "pred": "oos",
+      "confidence": 0.5492
+    },
+    {
+      "text": "send information on flood clean up to my phone",
+      "label": "oos",
+      "pred": "sync_device",
+      "confidence": 0.8426
+    },
+    {
+      "text": "will my fico score decrease if i increase my student loan debt",
+      "label": "improve_credit_score",
+      "pred": "oos",
+      "confidence": 0.618
+    },
+    {
+      "text": "turn on the microwave for 3 minutes",
+      "label": "smart_home",
+      "pred": "timer",
+      "confidence": 0.8914
+    },
+    {
+      "text": "show allison how to get to me",
+      "label": "share_location",
+      "pred": "oos",
+      "confidence": 0.5954
+    },
+    {
+      "text": "what's the apr on my savings account",
+      "label": "interest_rate",
+      "pred": "apr",
+      "confidence": 0.9826
+    },
+    {
+      "text": "i have a bogus transaction from amazon on my account",
+      "label": "report_fraud",
+      "pred": "oos",
+      "confidence": 0.5553
+    },
+    {
+      "text": "find my wallet",
+      "label": "oos",
+      "pred": "report_lost_card",
+      "confidence": 0.743
+    },
+    {
+      "text": "how come my credit card isn't working",
+      "label": "card_declined",
+      "pred": "oos",
+      "confidence": 0.5082
+    }
+  ]
+}

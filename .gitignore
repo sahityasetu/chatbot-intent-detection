@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.DS_Store
+# fine-tuned model (~260 MB), recreated by src.evaluate
+models/

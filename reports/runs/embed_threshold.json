@@ -1,0 +1,336 @@
+{
+  "model": "bge-small embeddings + LogReg",
+  "key": "embed",
+  "strategy": "threshold",
+  "threshold": 0.55,
+  "train_seconds": 19.0,
+  "ms_per_query": 1.06,
+  "test": {
+    "in_scope_accuracy": 0.9049,
+    "oos_recall": 0.882,
+    "oos_precision": 0.7022,
+    "overall_accuracy": 0.9007,
+    "wrong_answer_rate": 0.012
+  },
+  "test_no_threshold": {
+    "in_scope_accuracy": 0.9616,
+    "oos_recall": 0.0,
+    "oos_precision": 0.0,
+    "overall_accuracy": 0.7867,
+    "wrong_answer_rate": 0.0384
+  },
+  "test_curve": [
+    {
+      "threshold": 0.0,
+      "in_scope_accuracy": 0.9616,
+      "oos_recall": 0.0,
+      "oos_precision": 0.0,
+      "overall_accuracy": 0.7867,
+      "wrong_answer_rate": 0.0384
+    },
+    {
+      "threshold": 0.025,
+      "in_scope_accuracy": 0.9616,
+      "oos_recall": 0.0,
+      "oos_precision": 0.0,
+      "overall_accuracy": 0.7867,
+      "wrong_answer_rate": 0.0384
+    },
+    {
+      "threshold": 0.05,
+      "in_scope_accuracy": 0.9616,
+      "oos_recall": 0.001,
+      "oos_precision": 1.0,
+      "overall_accuracy": 0.7869,
+      "wrong_answer_rate": 0.0384
+    },
+    {
+      "threshold": 0.075,
+      "in_scope_accuracy": 0.9616,
+      "oos_recall": 0.026,
+      "oos_precision": 1.0,
+      "overall_accuracy": 0.7915,
+      "wrong_answer_rate": 0.0384
+    },
+    {
+      "threshold": 0.1,
+      "in_scope_accuracy": 0.9616,
+      "oos_recall": 0.079,
+      "oos_precision": 0.9875,
+      "overall_accuracy": 0.8011,
+      "wrong_answer_rate": 0.0382
+    },
+    {
+      "threshold": 0.125,
+      "in_scope_accuracy": 0.9613,
+      "oos_recall": 0.173,
+      "oos_precision": 0.9454,
+      "overall_accuracy": 0.818,
+      "wrong_answer_rate": 0.0364
+    },
+    {
+      "threshold": 0.15,
+      "in_scope_accuracy": 0.9607,
+      "oos_recall": 0.254,
+      "oos_precision": 0.9304,
+      "overall_accuracy": 0.8322,
+      "wrong_answer_rate": 0.0351
+    },
+    {
+      "threshold": 0.175,
+      "in_scope_accuracy": 0.9596,
+      "oos_recall": 0.357,
+      "oos_precision": 0.9297,
+      "overall_accuracy": 0.85,
+      "wrong_answer_rate": 0.0344
+    },
+    {
+      "threshold": 0.2,
+      "in_scope_accuracy": 0.9589,
+      "oos_recall": 0.419,
+      "oos_precision": 0.9249,
+      "overall_accuracy": 0.8607,
+      "wrong_answer_rate": 0.0336
+    },
+    {
+      "threshold": 0.225,
+      "in_scope_accuracy": 0.9584,
+      "oos_recall": 0.488,
+      "oos_precision": 0.9208,
+      "overall_accuracy": 0.8729,
+      "wrong_answer_rate": 0.0322
+    },
+    {
+      "threshold": 0.25,
+      "in_scope_accuracy": 0.9573,
+      "oos_recall": 0.548,
+      "oos_precision": 0.9179,
+      "overall_accuracy": 0.8829,
+      "wrong_answer_rate": 0.0318
+    },
+    {
+      "threshold": 0.275,
+      "in_scope_accuracy": 0.9553,
+      "oos_recall": 0.595,
+      "oos_precision": 0.8988,
+      "overall_accuracy": 0.8898,
+      "wrong_answer_rate": 0.0298
+    },
+    {
+      "threshold": 0.3,
+      "in_scope_accuracy": 0.954,
+      "oos_recall": 0.643,
+      "oos_precision": 0.8931,
+      "overall_accuracy": 0.8975,
+      "wrong_answer_rate": 0.0289
+    },
+    {
+      "threshold": 0.325,
+      "in_scope_accuracy": 0.9518,
+      "oos_recall": 0.684,
+      "oos_precision": 0.878,
+      "overall_accuracy": 0.9031,
+      "wrong_answer_rate": 0.0271
+    },
+    {
+      "threshold": 0.35,
+      "in_scope_accuracy": 0.9476,
+      "oos_recall": 0.722,
+      "oos_precision": 0.8565,
+      "overall_accuracy": 0.9065,
+      "wrong_answer_rate": 0.0256
+    },
+    {
+      "threshold": 0.375,
+      "in_scope_accuracy": 0.9451,
+      "oos_recall": 0.746,
+      "oos_precision": 0.841,
+      "overall_accuracy": 0.9089,
+      "wrong_answer_rate": 0.0236
+    },
+    {
+      "threshold": 0.4,
+      "in_scope_accuracy": 0.9404,
+      "oos_recall": 0.766,
+      "oos_precision": 0.8175,
+      "overall_accuracy": 0.9087,
+      "wrong_answer_rate": 0.0216
+    },
+    {
+      "threshold": 0.425,
+      "in_scope_accuracy": 0.9373,
+      "oos_recall": 0.791,
+      "oos_precision": 0.8047,
+      "overall_accuracy": 0.9107,
+      "wrong_answer_rate": 0.02
+    },
+    {
+      "threshold": 0.45,
+      "in_scope_accuracy": 0.93,
+      "oos_recall": 0.813,
+      "oos_precision": 0.7758,
+      "overall_accuracy": 0.9087,
+      "wrong_answer_rate": 0.0178
+    },
+    {
+      "threshold": 0.475,
+      "in_scope_accuracy": 0.9242,
+      "oos_recall": 0.833,
+      "oos_precision": 0.7573,
+      "overall_accuracy": 0.9076,
+      "wrong_answer_rate": 0.0164
+    },
+    {
+      "threshold": 0.5,
+      "in_scope_accuracy": 0.9187,
+      "oos_recall": 0.857,
+      "oos_precision": 0.742,
+      "overall_accuracy": 0.9075,
+      "wrong_answer_rate": 0.0151
+    },
+    {
+      "threshold": 0.525,
+      "in_scope_accuracy": 0.9113,
+      "oos_recall": 0.872,
+      "oos_precision": 0.7189,
+      "overall_accuracy": 0.9042,
+      "wrong_answer_rate": 0.0129
+    },
+    {
+      "threshold": 0.55,
+      "in_scope_accuracy": 0.9049,
+      "oos_recall": 0.882,
+      "oos_precision": 0.7022,
+      "overall_accuracy": 0.9007,
+      "wrong_answer_rate": 0.012
+    },
+    {
+      "threshold": 0.575,
+      "in_scope_accuracy": 0.8969,
+      "oos_recall": 0.893,
+      "oos_precision": 0.6822,
+      "overall_accuracy": 0.8962,
+      "wrong_answer_rate": 0.0107
+    },
+    {
+      "threshold": 0.6,
+      "in_scope_accuracy": 0.8891,
+      "oos_recall": 0.908,
+      "oos_precision": 0.6662,
+      "overall_accuracy": 0.8925,
+      "wrong_answer_rate": 0.0098
+    },
+    {
+      "threshold": 0.625,
+      "in_scope_accuracy": 0.8789,
+      "oos_recall": 0.92,
+      "oos_precision": 0.6438,
+      "overall_accuracy": 0.8864,
+      "wrong_answer_rate": 0.008
+    },
+    {
+      "threshold": 0.65,
+      "in_scope_accuracy": 0.8693,
+      "oos_recall": 0.931,
+      "oos_precision": 0.6269,
+      "overall_accuracy": 0.8805,
+      "wrong_answer_rate": 0.0076
+    },
+    {
+      "threshold": 0.675,
+      "in_scope_accuracy": 0.8558,
+      "oos_recall": 0.937,
+      "oos_precision": 0.6018,
+      "overall_accuracy": 0.8705,
+      "wrong_answer_rate": 0.0064
+    },
+    {
+      "threshold": 0.7,
+      "in_scope_accuracy": 0.8424,
+      "oos_recall": 0.945,
+      "oos_precision": 0.579,
+      "overall_accuracy": 0.8611,
+      "wrong_answer_rate": 0.0049
+    },
+    {
+      "threshold": 0.725,
+      "in_scope_accuracy": 0.8258,
+      "oos_recall": 0.95,
+      "oos_precision": 0.5536,
+      "overall_accuracy": 0.8484,
+      "wrong_answer_rate": 0.004
+    },
+    {
+      "threshold": 0.75,
+      "in_scope_accuracy": 0.8078,
+      "oos_recall": 0.959,
+      "oos_precision": 0.5307,
+      "overall_accuracy": 0.8353,
+      "wrong_answer_rate": 0.0038
+    },
+    {
+      "threshold": 0.775,
+      "in_scope_accuracy": 0.7896,
+      "oos_recall": 0.963,
+      "oos_precision": 0.5082,
+      "overall_accuracy": 0.8211,
+      "wrong_answer_rate": 0.0033
+    },
+    {
+      "threshold": 0.8,
+      "in_scope_accuracy": 0.7664,
+      "oos_recall": 0.971,
+      "oos_precision": 0.4833,
+      "overall_accuracy": 0.8036,
+      "wrong_answer_rate": 0.0029
+    },
+    {
+      "threshold": 0.825,
+      "in_scope_accuracy": 0.7333,
+      "oos_recall": 0.975,
+      "oos_precision": 0.4503,
+      "overall_accuracy": 0.7773,
+      "wrong_answer_rate": 0.0022
+    },
+    {
+      "threshold": 0.85,
+      "in_scope_accuracy": 0.6967,
+      "oos_recall": 0.977,
+      "oos_precision": 0.4186,
+      "overall_accuracy": 0.7476,
+      "wrong_answer_rate": 0.0018
+    },
+    {
+      "threshold": 0.875,
+      "in_scope_accuracy": 0.6444,
+      "oos_recall": 0.981,
+      "oos_precision": 0.3811,
+      "overall_accuracy": 0.7056,
+      "wrong_answer_rate": 0.0016
+    },
+    {
+      "threshold": 0.9,
+      "in_scope_accuracy": 0.5776,
+      "oos_recall": 0.987,
+      "oos_precision": 0.3422,
+      "overall_accuracy": 0.652,
+      "wrong_answer_rate": 0.0009
+    },
+    {
+      "threshold": 0.925,
+      "in_scope_accuracy": 0.4887,
+      "oos_recall": 0.991,
+      "oos_precision": 0.3013,
+      "overall_accuracy": 0.58,
+      "wrong_answer_rate": 0.0007
+    },
+    {
+      "threshold": 0.95,
+      "in_scope_accuracy": 0.3516,
+      "oos_recall": 0.996,
+      "oos_precision": 0.2546,
+      "overall_accuracy": 0.4687,
+      "wrong_answer_rate": 0.0004
+    }
+  ]
+}
